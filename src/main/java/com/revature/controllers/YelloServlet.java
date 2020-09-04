@@ -19,7 +19,7 @@ public class YelloServlet  extends HttpServlet  {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		PrintWriter out = res.getWriter();
-		out.print("<h1>Hello from your doGet method on jenkins!! you made it!!! </h1>");
+		out.print("<h1>hello Hello from your doGet method on jenkins!! you made it!!! </h1>");
 		
 	}
 	
