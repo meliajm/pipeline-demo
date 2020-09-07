@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Employee Success Page</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div align="center">
+		<h1 id="h1">Welcome!+</h1>
+		<h3>Here are your reimbursements</h3>
+		<ol>
+			<li></li>
+		</ol>
+			<h5></h5>
+		
+		<h3>Submit your new reimbursement request</h3>
+		
+		<form action="reimbursement" method="post">
+			<table>
+				<tr>
+					<td><input type="text" name="reimb_amount" placeholder="ENTER amount"></td>
+				</tr>
+				
+				<tr>
+				<!--  timestamp for submitted-->
+					<td><input hidden="timestamp" name="timestamp"></td>
+				</tr>
+				
+				<tr>
+					<td><input type="textarea" name="descr" placeholder="ENTER description"></td>
+				</tr>
+				
+				<tr>
+					<!-- author for submitted-->
+					<td><input hidden="author" name="this user"></td>
+				</tr>
+				<tr>
+					<!-- reimbursement status-->
+					<td><input hidden="reimbursement status" name="this user"></td>
+				</tr>
+				<tr>
+					<!-- make this a drop down menu-->
+					<td><input type="text" name="reimb_type" placeholder="ENTER Lodging, Travel, Food, or Other"></td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Submit here" name="employeeSuccess"></td>
+				</tr>
+			</table>		
+		</form>
+		
+		
+	</div>
+</body>
+</html>

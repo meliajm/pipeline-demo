@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+	<br>
+	
+    <div class="container" id="fullcontainer">
+		<h3 class="col-lg-12">Welcome to your employee reimbursement portal</h3>
+	<br>
+        <div class="row" id="login-row">
+            
+            
+            
+        </div>
+        
+        <div class="row" id="logininput">
+        	<h3 class="col-lg-12">Please enter your Creds here</h3>
+	            <input class="col-sm-4 form-control" id="username" type="text"  placeholder="USERNAME" name="username" value="captain">
+	            <input class="col-sm-4 form-control" id="password" type="password" placeholder="PASSWORD" name="password" value="password">
+	            <button id="loginbtn" class="btn btn-primary">Login Here</button>
+         </div>
+         
+       <div class="row">
+            <button id="logoutbtn" class="btn btn-primary btn-sm">Logout</button>
+        </div> 
+		<br>
+        <div class="row" id="table-row">
+            <table class="table-hover table-bordered" id="avtable">
+                <thead>
+                    <tr>
+                        <th>ID   </th>
+                        <th>Amount   </th>
+                        <th>Time submitted  </th>
+                        <th>Time resolved  </th>
+                        <th>Description  </th>
+                        <th>Type  </th>
+                        <th>STATUS  </th>
+                    </tr>
+                </thead>
+                <tbody id="reimb-body">
+                </tbody>
+            </table>
+            
+
+        </div>
+        <br>
+        <div class ="row" id="financeM">
+	        <div class="row" id="filter">
+				<div class="col-sm-4 form-group">
+				  <label for="status">Filter status:</label>
+					  <select class="form-control" id="filterID">
+					    <option value="Approved">Approved</option>
+					    <option value="Pending">Pending</option>
+					    <option value="Denied">Denied</option>
+					    <option value="All">All</option>
+					  </select>
+					<button class="btn btn-primary " id="filterStatusBtn">Filter Reimbursement</button>
+				</div>	        	
+	       </div>
+	        <br>
+	        <input type="hidden" id="resolver" name="resolver">
+	        <div class="row" id="select">
+		        </div>
+	        		<input class="col-sm-4 form-control" id="reimbID" name="reimbID" type="text" placeholder="select here">
+	        		<button class="btn btn-primary" id="SelectBtn">Select Reimbursement</button>
+	        	<div>
+	        </div>
+	        <br>
+	        <div class="row" id="to-add-btn">
+	        	<!-- <input class="col-sm-4 form-control" id="updateReimb" name="updateReimb" type="text" placeholder="update here"> -->
+	        	<div class="col-sm-4 form-group">
+	        	<label for="status">New Status:</label>
+				  <select class="form-control" id="updateReimb">
+				    <option value="Approved">Approved</option>
+				    <option value="Pending">Pending</option>
+				    <option value="Denied">Denied</option>
+				  </select>
+	        		<button class="btn btn-primary" id="UpdateBtn">Update Reimbursement</button>
+	        	</div>
+	        </div>
+	        <br>
+	        <!-- <div class="row" id="all">
+		        </div>
+	        		<button class="btn btn-primary" id="ShowAllBtn">Show All</button>
+	        	<div>
+	        </div> -->
+	        
+        </div>
+        
+        <div class ="row" id="employee">
+        	<input class="col-sm-4 form-control" id="reimbAmount" name="reimbAmount"  type="number" step='0.01' value='0.00' placeholder='0.00'>        	
+        	<br>
+        	<input class="col-sm-4 form-control" id="reimbDesc" name="reimbDesc"  type="text" placeholder="Description">
+<!--          	<label>Choose  Type:</label>
+ --> 
+			<!-- <select name="reimbType" id="cars">
+			  <option value="Food">Food</option>
+			  <option value="Lodging">Lodging</option>
+			  <option value="Travel">Travel</option>
+			  <option value="Other">Other</option>
+			</select> -->
+			<div class="form-group">
+			  <label for="type">Select Type:</label>
+			  <select class="col-sm-4 form-control" id="type">
+			    <option value="Food">Food</option>
+			    <option value="Lodging">Lodging</option>
+			    <option value="Travel">Travel</option>
+			    <option value="Other">Other</option>
+			  </select>
+			</div>
+	        <button class="btn btn-primary" id="submitReimb">Add a Reimbursement</button>
+        </div>
+        
+        
+        
+		
+        
+
+
+
+
+    </div>
+
+	<!-- <div class="container" id="fullcontainer">
+		<div class="row" id="login-row">
+		<h1 class="col-sm-4 form control">Welcome to your Reimbursement Portal!</h1>
+		<h3 >Login</h3>
+		<form action="login" method="post">
+			<table>
+				<tr>
+					<td><input type="text" id="username" name="username" placeholder="tiaclair1"></td>
+				</tr>
+				<tr>
+					<td><input type="password" id="password" name="password" placeholder="ENTER PASSWORD"></td>
+				</tr>
+				<tr>
+					<td><input type="submit" name="login" id="btn-login"></td>
+				</tr>
+			</table>		
+		</form>
+	</div> -->
+	<script src="index1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+	
+</body>
+</html>
